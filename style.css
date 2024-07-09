@@ -21,6 +21,9 @@ body {
 
 .stats-container {
     display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
@@ -36,10 +39,30 @@ body {
     font-size: 50px;
 }
 
+.games {
+    background-color: lightblue;
+    padding: 0.5%;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
 #games-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.revealable {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+
+.active {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .game-img {
