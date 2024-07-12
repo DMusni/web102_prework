@@ -40,7 +40,6 @@ body {
 }
 
 .games {
-    background-color: lightblue;
     padding: 0.5%;
     margin-left: -10px;
     margin-right: -10px;
@@ -51,18 +50,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.revealable {
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: all 2s ease;
-}
-
-.active {
-    transform: translateY(0px);
-    opacity: 1;
 }
 
 .game-img {
@@ -95,4 +82,21 @@ button {
     padding: 1%;
     margin: 1%;
     border-radius: 7px;
+}
+
+/* own customization */
+.navbar {
+    font-size: 18px;
+    text-decoration: none;  
+    display: inline-block;
+    margin: 30px;
+    padding: 3px;
+    color: black;
+    border: 2px solid black; 
+}
+
+.navbar:hover {
+    font-weight: bold;
+    color: #758190;
+    border-color: #758190;
 }
