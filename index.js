@@ -54,7 +54,7 @@ function addGamesToPage(games) {
 
 // call the function we just defined using the correct variable
 // later, we'll call this function using a different list of games
-addGamesToPage(GAMES_JSON);
+//addGamesToPage(GAMES_JSON);
 
 
 /*************************************************************************************
@@ -132,6 +132,8 @@ function showAllGames() {
     // add all games from the JSON data to the DOM
     addGamesToPage(GAMES_JSON);
 }
+
+filterFundedOnly()
 
 // select each button in the "Our Games" section
 const unfundedBtn = document.getElementById("unfunded-btn");
